@@ -1,16 +1,16 @@
 const itemOverlay = document.querySelectorAll('.item');
-let overlayOpen
+let overlayToggle = false 
+const overlayOpen
 = document.querySelectorAll('.item.clicked'); 
-// let overlayOpen = false 
 
 itemOverlay.forEach(itemOverlay => {
     itemOverlay.addEventListener('click', () => {
-        if(!overlayOpen) {
+        if(!overlayToggle) {
             itemOverlay.classList.add('clicked');
-            overlayOpen = true;
+            overlayToggle = true;
         }   else    {
             itemOverlay.classList.remove('clicked');
-            overlayOpen = false;
+            overlayToggle = false;
         }
     })
 })
