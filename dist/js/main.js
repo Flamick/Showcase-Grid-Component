@@ -20,3 +20,9 @@ itemOverlay.forEach(itemOverlay => {
 //         itemOverlay.classList.add('clicked');
 //     });
 // });
+
+// itemOverlay.addEventListener('click', (e) => {
+//     if(e.target.classList.includes('item')){
+//         itemOverlay.classList.remove('clicked');
+//     }
+// });
