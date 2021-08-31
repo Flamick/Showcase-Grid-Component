@@ -44,19 +44,19 @@ body {
     }
 
     // Bring in main color overlay
-    &:hover::after,
+    // &:hover::after,
     &.clicked::after {
         transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
     }
 
     // Scale image on hover
-    &:hover &-image,
+    // &:hover &-image,
     &.clicked &-image { 
         transform: scale(1.2);
     }
 
     // Bring in text on hover
-    &:hover &-text,
+    // &:hover &-text,
     &.clicked &-text {
         opacity: 1;
         transform: translateY(0);

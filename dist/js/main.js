@@ -1,7 +1,7 @@
 const itemOverlay = document.querySelectorAll('.item');
-// let overlayOpen
-// = document.querySelectorAll('.item.clicked'); 
-let overlayOpen = false 
+let overlayOpen
+= document.querySelectorAll('.item.clicked'); 
+// let overlayOpen = false 
 
 itemOverlay.forEach(itemOverlay => {
     itemOverlay.addEventListener('click', () => {
@@ -14,6 +14,18 @@ itemOverlay.forEach(itemOverlay => {
         }
     })
 })
+
+// if(itemOverlay) {
+//     itemOverlay.forEach(function(image) {
+//         image.onclick = function() {
+//             this.classList.add('clicked');
+//         }
+//     });
+// }
+
+// function closeImg() {
+//     document.querySelectorAll('.item.clicked').remove('clicked');
+// }
 
 // itemOverlay.forEach((itemOverlay) => {
 //     itemOverlay.addEventListener('click', () => {
