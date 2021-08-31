@@ -1,15 +1,14 @@
-const itemOverlay = document.querySelectorAll('.item');
-let overlayToggle = false 
-var overlayOpen = document.getElementsByClassName('clicked'); 
+let itemOverlay = Array.from(document.querySelectorAll('.item'));
 
-itemOverlay.forEach(itemOverlay => {
-    itemOverlay.addEventListener('click', () => {
-        if(!overlayToggle) {
-            itemOverlay.classList.add('clicked');
-            overlayToggle = true;
-        }   else    {
-            itemOverlay.classList.remove('clicked');
-            overlayToggle = false;
-        }
-    })
-})
+const handleClick = (e) => {
+    e.preventDefault();
+    itemOverlay.forEach(node => {
+        node.classList.remove('clicked');
+    });
+    e.currentTarget.classList.add('clicked');
+
+}
+
+itemOverlay.forEach(node => {
+    node.addEventListener('click', handleClick)
+});
