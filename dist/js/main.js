@@ -1,7 +1,7 @@
 const itemOverlay = document.querySelectorAll('.item');
-const itemImage
-= document.querySelectorAll('item-image'); 
-let overlayOpen = false 
+let overlayOpen
+= document.querySelectorAll('.item.clicked'); 
+// let overlayOpen = false 
 
 itemOverlay.forEach(itemOverlay => {
     itemOverlay.addEventListener('click', () => {
@@ -15,3 +15,8 @@ itemOverlay.forEach(itemOverlay => {
     })
 })
 
+// itemOverlay.forEach((itemOverlay) => {
+//     itemOverlay.addEventListener('click', () => {
+//         itemOverlay.classList.add('clicked');
+//     });
+// });
