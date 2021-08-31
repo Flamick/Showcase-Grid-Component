@@ -6,7 +6,6 @@ const handleClick = (e) => {
         node.classList.remove('clicked');
     });
     e.currentTarget.classList.add('clicked');
-
 }
 
 itemOverlay.forEach(node => {
