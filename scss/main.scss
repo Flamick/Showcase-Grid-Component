@@ -120,3 +120,23 @@ body {
         margin: 0;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .item {
+        // Bring in main color overlay
+        &:hover::after {
+            transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+        }
+    
+        // Scale image on hover
+        &:hover &-image { 
+            transform: scale(1.2);
+        }
+    
+        // Bring in text on hover
+        &:hover &-text {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
