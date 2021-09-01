@@ -86,7 +86,7 @@ body {
     opacity: .7;
     margin: 0; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .item:hover::after {
     transform: scale(2) translateX(0) translateY(0) rotate(-28deg); }
   .item:hover .item-image {

@@ -16,4 +16,4 @@ itemOverlay.forEach(node => {
     node.addEventListener('click', clickEffect)
 });
 
-const mediaDevice = window.matchMedia('(max-width: 765px)');
+const mediaDevice = window.matchMedia('(max-width: 799px)');

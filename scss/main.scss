@@ -121,7 +121,7 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
     .item {
         // Bring in main color overlay
         &:hover::after {
